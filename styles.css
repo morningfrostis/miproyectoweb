@@ -1,0 +1,329 @@
+*{box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: oswald;
+}
+
+ul {list-style: none;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 11px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 220, 220);
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+.color-gamer { color: darkorchid;}
+
+header {
+    background-color: rgb(201, 207, 209);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 2.2em;
+
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: cadetblue;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/pro-players.png);
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    color: rgb(255, 255, 255);
+}
+
+#somos-gamers .contenedor {
+    text-align: center;
+    padding: 200px 12 px;
+}
+
+#gamers-programs {
+    background-color: rgb(45, 37, 30);
+    color: aliceblue;
+    text-align: center;
+}
+
+#gamers-programs .container {
+    padding: 100px 0px;
+}
+
+#gamers-programs h2 {
+    padding: 5px 5px;
+    font-size: 30px;
+}
+
+#gamers-programs p {
+    display: grid;
+}
+
+.modulo1 {
+    background-image: linear-gradient(
+        10000deg,
+        rgba(38, 164, 116, 0.457),
+        rgba(38, 164, 116, 0.457)
+    )
+    ,url(/imagenes/pro-player.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.modulo2 {
+    background-image: linear-gradient(
+        10000deg,
+        rgba(40, 93, 250, 0.457),
+        rgba(40, 93, 250, 0.457)
+    )
+    ,url(/imagenes/coop.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.modulo3 {
+    background-image: linear-gradient(
+        10000deg,
+        rgba(185, 139, 40, 0.457),
+        rgba(185, 139, 40, 0.457)
+    )
+    ,url(/imagenes/mejores.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+#Contacto h2 {
+    text-align: center;
+}
+
+#apuntate {
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(37, 30, 27);
+    width: 100%;
+}
+
+footer {
+    background-color: rgba(189, 105, 21, 0.919);
+}
+
+footer p {
+    margin: 0;
+    color: aliceblue;
+}
+
+footer .contenedor {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.formulario {
+    background-color: rgb(194, 105, 27);
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: oswald;
+    color: aliceblue;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.formulario h1 {
+    vertical-align: text-top;
+}
+
+.formulario a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.formulario .boton {
+    font-family: oswald;
+    width: 20%;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.controles {
+    width: 100%;
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: none;
+    font-family: oswald;
+}
+
+@media (min-width: 720px) {
+    header .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+    #hero h1 {
+        font-size: 80px;
+    }
+
+    #somos-gamers .contenedor {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-gamers .texto1 {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-gamers .img-container {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ), url(imagenes/mejores.png);
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 1000px;
+    }
+
+    #gamers-programs .contenedor-modulos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #gamers-programs p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #gamers-programs h3 {
+        margin-top: 2px;
+    }
+
+    #gamers-programs .modulo1 {
+        padding: 15px;
+    }
+
+    #gamers-programs .modulo2 {
+        padding: 15px;
+    }
+
+    #gamers-programs .modulo3 {
+        padding: 15px;
+    }
+    #Contacto h2 {
+        font-size: 60px;
+        text-align: right;
+        margin-right: 400px;
+    }
+    #Contacto {
+        background-image: url(imagenes/faqs.png);
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    #Contacto .container {
+        text-align: initial;
+        float: right;
+    }
+
+    #Contacto ul {
+        margin-left: 550px;
+        height: 415px;
+    }
+
+}
